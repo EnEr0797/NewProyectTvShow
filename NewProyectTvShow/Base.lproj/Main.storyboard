@@ -1,24 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uu0-cc-4Fo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowCondensed-Bold.ttf">
+            <string>BarlowCondensed-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--TV Show-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewProyectTvShow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-Bz-glC">
+                                <rect key="frame" x="40" y="74" width="334" height="48"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Bold" family="Barlow Condensed" pointSize="40"/>
+                                <color key="textColor" red="0.1215686351" green="0.2235293984" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTvShow.png" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-kb-bCw">
+                                <rect key="frame" x="107" y="134" width="200" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="jBN-AW-6KJ"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-Uj-LjO">
+                                <rect key="frame" x="20" y="319" width="374" height="494"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZP-0T-ZFf">
+                                <rect key="frame" x="40" y="259" width="334" height="48"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Bold" family="Barlow Condensed" pointSize="40"/>
+                                <color key="textColor" red="0.89803922179999995" green="0.52941179279999995" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZP-0T-ZFf" secondAttribute="trailing" constant="40" id="6Kf-7T-ctk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bK5-kb-bCw" secondAttribute="trailing" constant="107" id="GgM-kG-nN4"/>
+                            <constraint firstItem="sZP-0T-ZFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HwM-TD-XQQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fYb-Uj-LjO" secondAttribute="trailing" constant="20" id="IuG-y3-Txe"/>
+                            <constraint firstItem="sZP-0T-ZFf" firstAttribute="top" secondItem="bK5-kb-bCw" secondAttribute="bottom" constant="12" id="Kxy-Vr-zTa"/>
+                            <constraint firstItem="bK5-kb-bCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Vdg-KY-pYi"/>
+                            <constraint firstItem="bK5-kb-bCw" firstAttribute="top" secondItem="hBe-Bz-glC" secondAttribute="bottom" constant="12" id="YRQ-pK-5ih"/>
+                            <constraint firstItem="fYb-Uj-LjO" firstAttribute="top" secondItem="sZP-0T-ZFf" secondAttribute="bottom" constant="12" id="gUZ-0e-tkF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hBe-Bz-glC" secondAttribute="trailing" constant="40" id="lID-NR-0rz"/>
+                            <constraint firstItem="hBe-Bz-glC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="m5V-6J-re5"/>
+                            <constraint firstItem="hBe-Bz-glC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tLs-rI-tMn"/>
+                            <constraint firstItem="fYb-Uj-LjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="usS-yg-yW5"/>
+                            <constraint firstItem="fYb-Uj-LjO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="z38-W0-IJQ"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="TV Show" image="tv" catalog="system" selectedImage="tv" id="xeA-sv-bNG">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="fYb-Uj-LjO" id="iZe-UF-hhW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="473.91304347826093" y="-325.44642857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="G8B-HG-dpN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uu0-cc-4Fo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="centered" id="PfR-2d-m9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.1215686351" green="0.2235293984" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mFE-qh-dBx"/>
+                        <segue destination="iCu-On-JxJ" kind="relationship" relationship="viewControllers" id="dlu-0Z-hvR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kr0-8B-XlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="70"/>
+        </scene>
+        <!--Favoritos-->
+        <scene sceneID="AQv-p7-bbj">
+            <objects>
+                <viewController id="iCu-On-JxJ" customClass="FavoritesViewController" customModule="NewProyectTvShow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fm0-wA-kzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-nu-W2C">
+                                <rect key="frame" x="20" y="222" width="374" height="591"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="591" id="yy7-JB-O7i"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2m-kI-EZp">
+                                <rect key="frame" x="20" y="74" width="374" height="48.5"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Bold" family="Barlow Condensed" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iKH-6V-008">
+                                <rect key="frame" x="179" y="130" width="56" height="57"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="DdD-VU-IMS"/>
+                                    <constraint firstAttribute="width" constant="56" id="O8o-f7-ScC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ByK-Iq-a7b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jqi-nu-W2C" firstAttribute="bottom" secondItem="ByK-Iq-a7b" secondAttribute="bottom" id="1dJ-Cg-bKK"/>
+                            <constraint firstItem="Jqi-nu-W2C" firstAttribute="top" secondItem="iKH-6V-008" secondAttribute="bottom" constant="34.5" id="HtS-iu-Zgb"/>
+                            <constraint firstItem="q2m-kI-EZp" firstAttribute="top" secondItem="ByK-Iq-a7b" secondAttribute="top" constant="30" id="Jo8-e1-eWo"/>
+                            <constraint firstItem="ByK-Iq-a7b" firstAttribute="trailing" secondItem="iKH-6V-008" secondAttribute="trailing" constant="179" id="NtZ-9K-3zP"/>
+                            <constraint firstItem="ByK-Iq-a7b" firstAttribute="trailing" secondItem="q2m-kI-EZp" secondAttribute="trailing" constant="20" id="WAS-xY-BYY"/>
+                            <constraint firstItem="ByK-Iq-a7b" firstAttribute="trailing" secondItem="Jqi-nu-W2C" secondAttribute="trailing" constant="20" id="bqp-BG-6ff"/>
+                            <constraint firstItem="iKH-6V-008" firstAttribute="top" secondItem="q2m-kI-EZp" secondAttribute="bottom" constant="8" id="chZ-8g-CtC"/>
+                            <constraint firstItem="Jqi-nu-W2C" firstAttribute="leading" secondItem="ByK-Iq-a7b" secondAttribute="leading" constant="20" id="gmH-hP-jlG"/>
+                            <constraint firstItem="iKH-6V-008" firstAttribute="leading" secondItem="ByK-Iq-a7b" secondAttribute="leading" constant="179" id="kqU-or-SF8"/>
+                            <constraint firstItem="q2m-kI-EZp" firstAttribute="leading" secondItem="ByK-Iq-a7b" secondAttribute="leading" constant="20" id="nH5-Oc-JqT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="star" catalog="system" id="yvj-zs-QNy"/>
+                    <connections>
+                        <outlet property="tableFavorites" destination="Jqi-nu-W2C" id="T1N-yF-IXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNT-rE-w5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473.91304347826093" y="367.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoTvShow.png" width="57.826770782470703" height="57.826770782470703"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
