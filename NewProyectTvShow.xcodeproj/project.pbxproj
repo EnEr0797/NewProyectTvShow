@@ -19,6 +19,7 @@
 		9B0BC88328D442EB00216482 /* NewProyectTvShowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BC88228D442EB00216482 /* NewProyectTvShowUITestsLaunchTests.swift */; };
 		9B0BC89228D4439100216482 /* BarlowCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B0BC89128D4439100216482 /* BarlowCondensed-Bold.ttf */; };
 		9B0BC89528D443B700216482 /* logoTvShow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0BC89428D443B700216482 /* logoTvShow.png */; };
+		9B2252E128D9EDF5007C2FCD /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2252E028D9EDF5007C2FCD /* Comments.swift */; };
 		9B4411ED28D50F070015772F /* RequestShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4411EC28D50F070015772F /* RequestShow.swift */; };
 		9B4411F528D514E70015772F /* TableViewCellShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4411F328D514E70015772F /* TableViewCellShow.swift */; };
 		9B4411F628D514E70015772F /* TableViewCellShow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4411F428D514E70015772F /* TableViewCellShow.xib */; };
@@ -62,6 +63,7 @@
 		9B0BC88228D442EB00216482 /* NewProyectTvShowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProyectTvShowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B0BC89128D4439100216482 /* BarlowCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		9B0BC89428D443B700216482 /* logoTvShow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTvShow.png; sourceTree = "<group>"; };
+		9B2252E028D9EDF5007C2FCD /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		9B4411EC28D50F070015772F /* RequestShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestShow.swift; sourceTree = "<group>"; };
 		9B4411F328D514E70015772F /* TableViewCellShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellShow.swift; sourceTree = "<group>"; };
 		9B4411F428D514E70015772F /* TableViewCellShow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellShow.xib; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				9B0BC89328D443A800216482 /* Images */,
 				9B0BC89028D4436900216482 /* Fonts */,
+				9B2252E028D9EDF5007C2FCD /* Comments.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B44120228D7F9000015772F /* TableViewCellFavorites.swift in Sources */,
+				9B2252E128D9EDF5007C2FCD /* Comments.swift in Sources */,
 				9B4411FE28D7F6EC0015772F /* FavoritesViewController.swift in Sources */,
 				9B0BC86728D442EA00216482 /* NewProyectTvShow.xcdatamodeld in Sources */,
 				9B0BC86128D442EA00216482 /* ViewController.swift in Sources */,
