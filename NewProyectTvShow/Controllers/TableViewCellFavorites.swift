@@ -11,10 +11,15 @@ class TableViewCellFavorites: UITableViewCell {
     
     @IBOutlet weak var imgFavorites: UIImageView!
     @IBOutlet weak var nameFavorites: UILabel!
+    @IBOutlet weak var cardFavorites: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.cardFavorites.clipsToBounds = true
+        self.cardFavorites.layer.cornerRadius = 15
+        self.cardFavorites.backgroundColor = UIColor.lightGray
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

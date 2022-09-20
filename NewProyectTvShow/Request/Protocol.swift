@@ -8,5 +8,5 @@
 import Foundation
 
 protocol GetDataDelegate {
-    func sendDataDeploymenteVC(data: Cuentas)
+    func sendDataDeploymenteVC(data: ShowElement)
 }
